@@ -78,22 +78,22 @@ jobs:
           nowInstallInstance: ${{ secrets.SN_TEST_INSTANCE }}
           appSysID: ${{ secrets.SN_APP_SYSID }}
 
-      - name: ServiceNow CI/CD Run ATF Test Suite
-        uses: ServiceNow/sncicd-tests-run@1.0.0
-        with:
-          testSuiteSysId: ${{ secrets.SN_ATFTESTSUITE_SYSID }}
-        env:
-          nowUsername: ${{ secrets.SN_USERNAME }}
-          nowPassword: ${{ secrets.SN_PASSWORD }}
-          nowInstallInstance: ${{ secrets.SN_TEST_INSTANCE }}
-
-      - name: ServiceNow CI/CD Rollback App
-        if: ${{ failure() && steps.install_app.outputs.rollbackVersion }}
-        uses: ServiceNow/sncicd-rollback-app@1.0.0
-        with:
-          version: ${{steps.install_app.outputs.rollbackVersion}}
-        env:
-          nowUsername: ${{ secrets.SN_USERNAME }}
-          nowPassword: ${{ secrets.SN_PASSWORD }}
-          nowInstallInstance: ${{ secrets.SN_TEST_INSTANCE }}
-          appSysID: ${{ secrets.SN_APP_SYSID }}
+     # - name: ServiceNow CI/CD Run ATF Test Suite
+      #  uses: ServiceNow/sncicd-tests-run@1.0.0
+      #  with:
+       #   testSuiteSysId: ${{ secrets.SN_ATFTESTSUITE_SYSID }}
+      #  env:
+      #    nowUsername: ${{ secrets.SN_USERNAME }}
+      #    nowPassword: ${{ secrets.SN_PASSWORD }}
+      #    nowInstallInstance: ${{ secrets.SN_TEST_INSTANCE }}
+#
+#      - name: ServiceNow CI/CD Rollback App
+#        if: ${{ failure() && steps.install_app.outputs.rollbackVersion }}
+#        uses: ServiceNow/sncicd-rollback-app@1.0.0
+#        with:
+#          version: ${{steps.install_app.outputs.rollbackVersion}}
+#        env:
+#          nowUsername: ${{ secrets.SN_USERNAME }}
+#          nowPassword: ${{ secrets.SN_PASSWORD }}
+#          nowInstallInstance: ${{ secrets.SN_TEST_INSTANCE }}
+#          appSysID: ${{ secrets.SN_APP_SYSID }}
