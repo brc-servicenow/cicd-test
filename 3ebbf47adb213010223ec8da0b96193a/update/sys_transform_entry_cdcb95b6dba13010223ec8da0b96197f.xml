@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_transform_entry">
+    <sys_transform_entry action="INSERT_OR_UPDATE">
+        <choice_action>reject</choice_action>
+        <coalesce>true</coalesce>
+        <coalesce_case_sensitive>false</coalesce_case_sensitive>
+        <coalesce_empty_fields>false</coalesce_empty_fields>
+        <date_format>yyyy-MM-dd HH:mm:ss</date_format>
+        <map display_value="M2M Contract for Assets">e12b5d76dba13010223ec8da0b96199b</map>
+        <reference_value_field>asset_tag</reference_value_field>
+        <source_field>u_asset_tag</source_field>
+        <source_script><![CDATA[answer = (function transformEntry(source) {
+
+	// Add your code here
+	return ""; // return the value to be put into the target field
+
+})(source);]]></source_script>
+        <source_table>u_import_m2m_assests_contract</source_table>
+        <sys_class_name>sys_transform_entry</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-28 08:52:48</sys_created_on>
+        <sys_id>cdcb95b6dba13010223ec8da0b96197f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>u_asset_tag</sys_name>
+        <sys_package display_value="CICD Test" source="3ebbf47adb213010223ec8da0b96193a">3ebbf47adb213010223ec8da0b96193a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CICD Test">3ebbf47adb213010223ec8da0b96193a</sys_scope>
+        <sys_update_name>sys_transform_entry_cdcb95b6dba13010223ec8da0b96197f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-28 08:52:48</sys_updated_on>
+        <target_field>asset</target_field>
+        <target_table>clm_m2m_contract_asset</target_table>
+        <use_source_script>false</use_source_script>
+    </sys_transform_entry>
+</record_update>

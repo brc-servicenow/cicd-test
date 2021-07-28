@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="sys_import_set_row" label="Import M2m Assests Contract" max_length="40" name="u_import_m2m_assests_contract" type="collection">
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Asset tag" label="Asset tag" max_length="40" name="u_asset_tag" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Assigned to" label="Assigned to" max_length="40" name="u_assigned_to" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Company" label="Company" max_length="40" name="u_company" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Contract number" label="Contract number" max_length="40" name="u_contract_number" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Cost" label="Cost" max_length="40" name="u_cost" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Model category" label="Model category" max_length="40" name="u_model_category" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=State" label="State" max_length="40" name="u_state" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Substate" label="Substate" max_length="40" name="u_substate" type="string"/>
+    </element>
+</database>

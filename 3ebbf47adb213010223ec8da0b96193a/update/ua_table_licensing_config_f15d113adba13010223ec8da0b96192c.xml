@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="ua_table_licensing_config">
+    <ua_table_licensing_config action="INSERT_OR_UPDATE">
+        <is_fulfillment>false</is_fulfillment>
+        <license_condition/>
+        <license_model>none</license_model>
+        <license_roles/>
+        <name>u_import_m2m_assests_contract</name>
+        <op_delete>true</op_delete>
+        <op_insert>true</op_insert>
+        <op_update>true</op_update>
+        <owner_condition/>
+        <sys_class_name>ua_table_licensing_config</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-28 08:57:12</sys_created_on>
+        <sys_id>f15d113adba13010223ec8da0b96192c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>u_import_m2m_assests_contract</sys_name>
+        <sys_package display_value="CICD Test" source="3ebbf47adb213010223ec8da0b96193a">3ebbf47adb213010223ec8da0b96193a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CICD Test">3ebbf47adb213010223ec8da0b96193a</sys_scope>
+        <sys_update_name>ua_table_licensing_config_f15d113adba13010223ec8da0b96192c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-28 08:57:12</sys_updated_on>
+    </ua_table_licensing_config>
+</record_update>
